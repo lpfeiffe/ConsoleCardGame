@@ -1,6 +1,6 @@
 IDIR = inc
 CC = gcc
-CFLAGS = -I. -Wall -Werror
+CFLAGS = -g -I. -Wall -Werror
 
 TARGET = ConsoleCardGame
 
@@ -10,10 +10,10 @@ LDIR = lib
 
 LIBS =
 
-_DEPS = main.h
+_DEPS = main.h card.h deck.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = main.o
+_OBJ = main.o deck.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 SRCS = $(wildcard $(SDIR)/*.c)
