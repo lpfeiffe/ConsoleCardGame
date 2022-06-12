@@ -1,0 +1,37 @@
+Blackjack overview:
+https://www.blackjackapprenticeship.com/how-to-play-blackjack/
+
+Ways to win:
+1. Draw a hand value that is higher than the dealer's hand value
+2. By the dealer drawing a hand value that goes over 21
+3. By drawing a hand value of 21 on your first two cards, 
+   when the dealer does not
+
+Ways to lose:
+1. Your hand value exceeds 21
+2. The dealers hand has a greater value than yours at the end of the round
+
+- Blackjack is played with a deck of 52 playing cards and suits don't matter
+- 2 through 10 count at face value
+- Face cards (J, Q, K) count as 10
+- Ace can count as a 1 or an 11 depending on which value helps the hand the most
+
+Game Outline:
+1. Place wager
+2. Dealer deals out 2 cards to each player and one card face up for themselves
+3. Player decides how to play the hand
+    a. STAND - first two cards are acceptable
+    b. HIT - get another card to improve your hand total until you bust or choose to stand
+    c. DOUBLE DOWN - if you have a hand that is advantageous to you but you need to take
+                     an additional card, you can double your initial wager and the dealer will
+                     deal 1 additional card
+    d. SPLIT - if dealt a pair (2 cards of equal value) you have the option to put out a second
+               wager and the dealer will split the two cards so that each card will become the
+               first card on two new hands
+    e. SURRENDER - if you don't like your initial hand, you have the option of giving it up in
+                   exchange for half your original bet back
+4. Dealer flips over their face down card. If they have a hand total of 17 or higher, they will
+   automatically stand. If it is 16 or lower, they will take additional hit cards
+    a. If the dealer is delt an ACE and a six (soft 17), then the ACE will be counted as a 7, and
+       the dealer will HIT
+5. Payouts

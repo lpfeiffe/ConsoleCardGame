@@ -18,9 +18,24 @@
 #include <string.h>
 #include <stdarg.h>
 #include <time.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 #include "card.h"
 #include "deck.h"
+#include "display.h"
+#include "blackjack.h"
+#include "player.h"
+
+#define ARRAY_SIZE(x) sizeof(x)/sizeof(x[0])
+
+typedef enum GameType
+{
+    GAME_BLACKJACK = 0,
+    GAME_NONE
+} GameType_e;
+
+GameType_e DisplayStartScreen(void);
 
 #endif /* MAIN_H */
 

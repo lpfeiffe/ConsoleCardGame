@@ -1,6 +1,12 @@
 #include "../inc/main.h"
 
-static char * cardValues[NUM_CARD_VALUES] = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+static char * cardValues[NUM_CARD_VALUES] = {
+    CARD_VALUE_ACE, CARD_VALUE_TWO, CARD_VALUE_THREE,
+    CARD_VALUE_FOUR, CARD_VALUE_FIVE, CARD_VALUE_SIX, 
+    CARD_VALUE_SEVEN, CARD_VALUE_EIGHT, CARD_VALUE_NINE,
+    CARD_VALUE_TEN, CARD_VALUE_JOKER, CARD_VALUE_QUEEN,
+    CARD_VALUE_KING
+};
 
 Deck_t * Deck_Initialize(void)
 {
@@ -18,6 +24,8 @@ Deck_t * Deck_Initialize(void)
         }
     }
 
+    Deck_Shuffle(deck);
+
     deck->currentCard = 0;
 
     return deck;
@@ -30,7 +38,7 @@ void Deck_Shuffle(Deck_t * deck)
     https://stackoverflow.com/questions/42321370/fisher-yates-shuffling-algorithm-in-c
     */
     
-    Card_t tmpCard;
+    Card_t tmpCard = {0};
     int j = 0;
     srand(time(NULL));
 
@@ -55,7 +63,7 @@ Card_t * Deck_Peek(Deck_t * deck)
 
 Card_t * Deck_RemoveCard(Deck_t * deck)
 {
-    Card_t * card;
+    Card_t * card = NULL;
 
     if (Deck_IsEmpty(deck))
     {

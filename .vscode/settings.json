@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "string.h": "c",
+        "card.h": "c",
+        "time.h": "c",
+        "unistd.h": "c",
+        "type_traits": "c",
+        "deck.h": "c"
+    }
+}
